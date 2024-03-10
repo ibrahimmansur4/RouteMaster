@@ -1,0 +1,4 @@
+#ifndef ROUTEPLANNER_H
+#define ROUTEPLANNER_H
+
+#endif // ROUTEPLANNER_H
