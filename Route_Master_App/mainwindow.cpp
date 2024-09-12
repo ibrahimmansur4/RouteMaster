@@ -1,15 +1,16 @@
 #include "mainwindow.h"
-#include "ui_mainwindow.h"
+#include <QVBoxLayout>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
-    , ui(new Ui::MainWindow)
 {
-    ui->setupUi(this);
+    setWindowTitle("Route Master");
+    setMinimumSize(800, 600);
+
+    routeMaster = new RouteMaster(this);
+    setCentralWidget(routeMaster);
 }
 
 MainWindow::~MainWindow()
 {
-    delete ui;
 }
-

@@ -9,13 +9,23 @@ CONFIG += c++11
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-    RoutePlanner.cpp \
+    algorithmwindow.cpp \
+    astar.cpp \
+    bfs.cpp \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    routemaster.cpp \
+    startscreen.cpp \
+    statswindow.cpp
 
 HEADERS += \
-    RoutePlanner.h \
-    mainwindow.h
+    algorithmwindow.h \
+    astar.h \
+    bfs.h \
+    mainwindow.h \
+    routemaster.h \
+    startscreen.h \
+    statswindow.h
 
 FORMS += \
     mainwindow.ui
@@ -29,3 +39,9 @@ CONFIG += embed_translations
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+RESOURCES += \
+    images.qrc
+
+DISTFILES += \
+    images/download.png
