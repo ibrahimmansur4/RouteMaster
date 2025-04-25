@@ -1,5 +1,6 @@
 #include "algorithmwindow.h"
 #include "bfs.h"
+#include "astar.h"
 #include <QPainter>
 #include <QMouseEvent>
 #include <QVBoxLayout>
@@ -174,4 +175,5 @@ void AlgorithmWindow::showNextPathStep()
         statusLabel->setText("Animation complete. Click to reset.");
     }
 }
+
 
